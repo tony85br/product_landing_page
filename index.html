@@ -1,0 +1,88 @@
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+     <style>
+                @media only screen and (max-width: 768px) {
+                   /* For mobile phones: */
+                   [class*="col-"] {
+                     width: 100%;
+                   }
+                 }
+                 @media only screen and (min-width: 600px) {
+                 [class*="col-"] {
+                  width: 100%;
+                  }
+                }
+                @media only screen and (max-width: 600px) {
+                  body {
+                    background-color: lightblue;
+                  }
+                }
+                @media only screen and (min-width: 768px) {
+                  .example {background: blue;}
+                }
+                 .flex-container {
+                  display: flex;
+                  justify-content: center;
+                }
+     </style>
+ </head>
+ <body>
+    <header id="header">
+     <nav id="nav-bar" class="sticky">
+       <div id="center">
+           <img id="header-img" src="https://www.cressi.com/easyUp/logo/CressiSwim2.jpg" class="center"/>
+         <div class="container">
+           <a class="nav-link" href="#discover cressi" placeholder="">Discover  Cressi</a>
+           <a class="nav-link" href="#search for cressi" placeholder="">Search for Cressi</a>
+           <a class="nav-link" href="#search on amazon" placeholder="">Search on Amazon</a>
+       </div>
+      </div>
+     </nav>
+    </header>
+         <h1>Cressi Professional Scuba Diving Equipment</h1>
+         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/4txI0k2FHfE"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe>
+       <p class="text"><strong>Here  are some of our products:</strong></p>
+           <div class="div1"><strong>Cressi Camo Dry Bag<br>
+             <br>Cressi Cherokee Fast Speargun<br>
+             <br>Cressi Cherokee Open Handle with Trigger Mechanism<br>
+             <br>Cressi Compass Module<br>
+             <br>Cressi Compass Module Kit with Strap and BCD Holder<br>
+             <br>Cressi Computer Edy Interface<br>
+             <br>Cressi Dry Gun Bag<br>
+             <br>Cressi Elastic Bungee System Fin Strap</strong>
+           </div>
+    <section id="discover cressi">
+    </section>
+    <section id="search for cressi">
+    </section>
+    <section id="search on amazon">
+    </section>
+      <div class="flex-container">
+      <div><a href="amazon-affiliate-link">Buy on Amazon</a></div>
+      <div><a href="cressi-affiliate-link">Buy on Cressi</a></div>
+      <div><a href="amazon-affiliate-link">Buy on Scubastore</a></div>
+      </div>
+      <h2>Please share your INFO below:</h2>
+ <form id="form" action="https://www.freecodecamp.com/email-submit">
+     <input id="email"type="email" placeholder="Enter your email address" name="email"></input>
+     <input id="submit" type="submit" href="#email"></input>
+ </form>
+   </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+         }
+        }
+    </script>
+</html>
